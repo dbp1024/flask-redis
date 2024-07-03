@@ -1,0 +1,12 @@
+name: Docker image build and push
+on: [push]
+jobs:
+  Docker-build-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository code
+        uses: actions/checkout@v4
+      - name: docker image build
+        run: docker image build -t dbpya/flask-redis:latest .
+      - name: list docker images
+        run: docker image ls
