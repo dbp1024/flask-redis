@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Docker-build-push:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
       - name: Checkout repository code
         uses: actions/checkout@v4
       - name: Dockerhub login
