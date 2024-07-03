@@ -10,3 +10,7 @@ jobs:
         run: docker image build -t dbpya/flask-redis:latest .
       - name: list docker images
         run: docker image ls
+      - name: dockerhub login
+        run: docker login -u ${{ secrets.DOCKERHUB_USER }} -p ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: docker image push
+        run: docker image push dbpya/flask-redis:latest
