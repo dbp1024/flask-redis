@@ -48,9 +48,9 @@ jobs:
       - name: create-directory
         uses: nekiro/ssh-job@main
         with:
-        host: ${{ vars.ALIHOST }}
-        key: ${{ vars.ALIKEY }}
-        user: ${{ vars.ALIUSER }}
+          host: ${{ vars.ALIHOST }}
+          key: ${{ vars.ALIKEY }}
+          user: ${{ vars.ALIUSER }}
         command: |
           ls
           pwd
