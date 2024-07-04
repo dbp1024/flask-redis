@@ -51,6 +51,6 @@ jobs:
           host: ${{ vars.ALIHOST }}
           key: ${{ vars.ALIKEY }}
           user: ${{ vars.ALIUSER }}
-        command: |
-          ls
-          pwd
+          command: |
+            ls
+            pwd
