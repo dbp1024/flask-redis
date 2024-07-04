@@ -44,6 +44,7 @@ jobs:
           tags: dbpya/flask-redis:latest
   
   Deploy-at-aliECS:
+    runs-on: ubuntu-latest
     steps:
       - name: create-directory
         uses: nekiro/ssh-job@main
