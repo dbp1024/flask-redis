@@ -42,3 +42,15 @@ jobs:
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: dbpya/flask-redis:latest
+  
+  Deploy-at-aliECS:
+    steps:
+      - name: create-directory
+        uses: nekiro/ssh-job@main
+        with:
+        host: ${{ vars.ALIHOST }}
+        key: ${{ vars.ALIKEY }}
+        user: ${{ vars.ALIUSER }}
+        command: |
+          ls
+          pwd
