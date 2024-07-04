@@ -50,7 +50,7 @@ jobs:
         uses: nekiro/ssh-job@main
         with:
           host: ${{ vars.ALIHOST }}
-          key: ${{ vars.ALIKEY }}
+          key: ${{ secrets.ALIKEY }}
           user: ${{ vars.ALIUSER }}
           command: |
             ls
