@@ -46,7 +46,7 @@ jobs:
   Deploy-at-aliECS:
     runs-on: ubuntu-latest
     steps:
-      - name: Do something in aliECS
+      - name: Deploy with docker-compose
         uses: nekiro/ssh-job@main
         with:
           host: ${{ vars.ALIHOST }}
