@@ -53,4 +53,7 @@ jobs:
           key: ${{ secrets.ALIKEY }}
           user: ${{ vars.ALIUSER }}
           command: |
-            pwd
+            docker-compose down
+            docker image rm dbpya/flask-redis:latest
+            docker-compose up -d
+            docker-compose ps
