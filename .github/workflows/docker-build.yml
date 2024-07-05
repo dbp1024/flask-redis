@@ -46,7 +46,7 @@ jobs:
   Deploy-at-aliECS:
     runs-on: ubuntu-latest
     steps:
-      - name: create-directory
+      - name: Do something in aliECS
         uses: nekiro/ssh-job@main
         with:
           host: ${{ vars.ALIHOST }}
