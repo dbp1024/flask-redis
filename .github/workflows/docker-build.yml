@@ -57,3 +57,4 @@ jobs:
             docker image rm dbpya/flask-redis:latest
             docker-compose up -d
             docker-compose ps
+            
