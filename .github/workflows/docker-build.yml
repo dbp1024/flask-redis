@@ -53,5 +53,4 @@ jobs:
           key: ${{ secrets.ALIKEY }}
           user: ${{ vars.ALIUSER }}
           command: |
-            ls -l
             pwd
